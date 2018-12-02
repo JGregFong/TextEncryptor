@@ -11,6 +11,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class RESTTextEncryptorClient extends Application{
 	
@@ -58,7 +65,12 @@ public class RESTTextEncryptorClient extends Application{
 	}
 	
 	public void transmit(boolean hasEncryption, String message) {
+		if(hasEncryption) {
 		
+		}
+		else {
+			
+		}
 	}
 
 }
