@@ -64,13 +64,15 @@ public class RESTTextEncryptorClient extends Application{
 		primaryStage.show();
 	}
 	
-	public void transmit(boolean hasEncryption, String message) {
+	public String transmit(boolean hasEncryption, String message) {
+		String result = "";
 		if(hasEncryption) {
 		
 		}
 		else {
 			
 		}
+		return result;
 	}
 
 }
