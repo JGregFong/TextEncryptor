@@ -36,7 +36,7 @@ public class RESTTextEncryptorServer {
 		String encryptionKey = "Merry Christmas, Professor!";
 		
 		System.out.println("Data Received: " + originalMessage.toString());
-		String encryptedMessage = AES.encrypt(originalMessage.toString(), encryptionKey);
+		String encryptedMessage = AESnHexConverter.encrypt(originalMessage.toString(), encryptionKey);
 		
 		System.out.println("Data Encrypted: " + encryptedMessage);
 		
@@ -65,7 +65,7 @@ public class RESTTextEncryptorServer {
 		String encryptionKey = "Merry Christmas, Professor!";
 		
 		System.out.println("Data Received: " + encryptedMessage.toString());
-		String decryptedMessage = AES.decrypt(encryptedMessage.toString(), encryptionKey);
+		String decryptedMessage = AESnHexConverter.decrypt(encryptedMessage.toString(), encryptionKey);
 		
 		System.out.println("Data Decrypted: "+ decryptedMessage);
 		
