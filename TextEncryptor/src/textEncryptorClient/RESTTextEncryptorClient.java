@@ -90,7 +90,7 @@ public class RESTTextEncryptorClient extends Application{
 					URL encryptURL = new URL("http://localhost:8080/TextEncryptor/api/encryptor");
 					URLConnection connection = encryptURL.openConnection();
 					connection.setDoOutput(true);
-					connection.setRequestProperty("Content-Type", "application/json");
+					connection.setRequestProperty("Content-Type", "text/plain");
 					connection.setConnectTimeout(5000);
 					connection.setReadTimeout(5000);
 					OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
@@ -116,7 +116,7 @@ public class RESTTextEncryptorClient extends Application{
 					URL decryptURL = new URL("http://localhost:8080/TextEncryptor/api/decryptor");
 					URLConnection connection = decryptURL.openConnection();
 					connection.setDoOutput(true);
-					connection.setRequestProperty("Content-Type", "application/json");
+					connection.setRequestProperty("Content-Type", "text/plain");
 					connection.setConnectTimeout(5000);
 					connection.setReadTimeout(5000);
 					OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
